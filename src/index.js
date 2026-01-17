@@ -9,7 +9,7 @@ import ReactDom from "react-dom/client";
 
 // Parte 2
 
-function Profile() {
+/* function Profile() {
     return (
         <img
             src="https://th.bing.com/th/id/R.23e3f025682e1dff281c9a66741d6695?rik=ofJoN06JmSK%2bBg&pid=ImgRaw&r=0"
@@ -28,8 +28,18 @@ export default function Gallery() {
         </section>
     )
 }
+ */
+
+// Parte 3
+import Gallery from "./Gallery"
 
 
+export default function App() {
+    return (
+//        <Gallery />
+        <Gallery />
+        )
+}
 
 const root = ReactDom.createRoot(
     document.getElementById("root")
@@ -37,6 +47,6 @@ const root = ReactDom.createRoot(
 
 root.render(
     <React.StrictMode>
-        <Gallery />
+        <App />
     </React.StrictMode>
 );
