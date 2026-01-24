@@ -46,7 +46,7 @@ const root = ReactDom.createRoot(
 )
  */
 
-// Parte 4 agregar estilos
+/* // Parte 4 agregar estilos
 
 export default function TodoList() {
     return (
@@ -58,6 +58,15 @@ export default function TodoList() {
             <li>Projecto</li>
         </ul>
     )
+} */
+// Importar componentes para detalle de Cantante
+import {Singer} from "./Singer.js"
+import {SongList} from "./SongList.js"
+
+export default function SingerDetail() {
+    return (
+        <Singer />
+    )
 }
 
 const root = ReactDom.createRoot(
@@ -66,7 +75,8 @@ const root = ReactDom.createRoot(
 
 root.render(
     <React.StrictMode>
-        <TodoList />
+        <SingerDetail />
+        <SongList />
     </React.StrictMode>
 );
 
