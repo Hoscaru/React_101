@@ -31,14 +31,33 @@ export default function Gallery() {
  */
 
 // Parte 3
-import Gallery from "./Gallery"
+/* import Gallery from "./Gallery"
+import { Profile } from "./Profile";
 
 
 export default function App() {
     return (
-//        <Gallery />
-        <Gallery />
-        )
+        <Profile />
+    )
+}
+
+const root = ReactDom.createRoot(
+    document.getElementById("root")
+)
+ */
+
+// Parte 4 agregar estilos
+
+export default function TodoList() {
+    return (
+        <ul style={
+            {backgroundColor: "red"}
+        }>
+            <li>Estudiar</li>
+            <li>Gym</li>
+            <li>Projecto</li>
+        </ul>
+    )
 }
 
 const root = ReactDom.createRoot(
@@ -47,6 +66,8 @@ const root = ReactDom.createRoot(
 
 root.render(
     <React.StrictMode>
-        <App />
+        <TodoList />
     </React.StrictMode>
 );
+
+
