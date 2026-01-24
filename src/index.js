@@ -60,14 +60,27 @@ export default function TodoList() {
     )
 } */
 // Importar componentes para detalle de Cantante
-import {Singer} from "./Singer.js"
+/* import {Singer} from "./Singer.js"
 import {SongList} from "./SongList.js"
 
 export default function SingerDetail() {
     return (
+    <>
         <Singer />
+        <SongList />
+    </>
+    )
+} */
+
+// Parte 5 propiedades a componente hijo
+import { Profile } from "./Profile";
+
+export default function App() {
+    return (
+        <Profile />
     )
 }
+
 
 const root = ReactDom.createRoot(
     document.getElementById("root")
@@ -75,8 +88,7 @@ const root = ReactDom.createRoot(
 
 root.render(
     <React.StrictMode>
-        <SingerDetail />
-        <SongList />
+        <App />
     </React.StrictMode>
 );
 
